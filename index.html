@@ -7,22 +7,60 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Skip link cho accessibility -->
   <a href="#about" class="skip-link">Skip to Main Content</a>
+
+  <!-- Site header chính: logo + nav + dark mode -->
   <header class="site-header">
+    <a class="logo" href="#top">Shirakami Fubuki fan page</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <span class="sr-only">Toggle Navigation</span>
+      ☰
+    </button>
+
+    <nav>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#reasons-title">Reasons</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#creator">Links</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle" type="button">
+      Dark mode
+    </button>
+  </header>
+
+  <!-- Hero section: tiêu đề + link external -->
+  <header class="hero-header">
     <h1>I introduce you my wife! Shirakami Fubuki!</h1>
     <nav aria-label="Primary" class="primary-nav">
       <ul>
-        <li><a href="https://virtualyoutuber.fandom.com/wiki/Shirakami_Fubuki" target="_blank" rel="noopener noreferrer">Learn more on Fandom</a></li>
-        <li><a href="https://www.youtube.com/@ShirakamiFubuki" target="_blank" rel="noopener noreferrer">Her YouTube channel</a></li>
+        <li>
+          <a href="https://virtualyoutuber.fandom.com/wiki/Shirakami_Fubuki"
+             target="_blank" rel="noopener noreferrer">
+            Learn more on Fandom
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@ShirakamiFubuki"
+             target="_blank" rel="noopener noreferrer">
+            Her YouTube channel
+          </a>
+        </li>
         <li><a href="#gallery">Jump to Gallery</a></li>
       </ul>
     </nav>
   </header>
+
   <main id="about">
     <section class="intro">
       <h2>About This Page</h2>
       <p>I made this website to show how lovely this 2D character is.</p>
     </section>
+
     <section class="reasons flex" aria-labelledby="reasons-title">
       <h2 id="reasons-title">Reasons Why I Love This Character</h2>
       <ol>
@@ -31,29 +69,43 @@
         <li>She is funny and always makes people smile.</li>
       </ol>
     </section>
+
     <section id="gallery" class="gallery" aria-labelledby="gallery-title">
       <h2 id="gallery-title">Images of Her Beauty</h2>
+
       <figure>
         <img src="fubuki2.jpg" alt="Shirakami Fubuki smiling with a bright background">
         <figcaption>Fubuki showing her cheerful smile.</figcaption>
       </figure>
+
       <figure>
         <img src="fubuki1.jpg" alt="Shirakami Fubuki posing with fox ears visible">
         <figcaption>Her signature fox ears on display.</figcaption>
       </figure>
+
       <figure>
         <img src="fubuki3.jpg" alt="Shirakami Fubuki with sparkling effects around her">
         <figcaption>A magical moment captured in time.</figcaption>
       </figure>
+
       <p class="credits">Credit to the talented artists behind these images.</p>
     </section>
   </main>
+
   <footer>
-    <section class="creator">
-      <p>Created by Me – Kxisla</p>
-      <p>Visit this cute fox!! <a href="https://hololive.hololivepro.com/en/talents/shirakami-fubuki/" target="_blank" rel="noopener noreferrer">Official Profile</a></p>
+    <section id="creator" class="creator">
+      <p>Created with love – Kxisla</p>
+      <p>
+        Visit this cute fox!!
+        <a href="https://hololive.hololivepro.com/en/talents/shirakami-fubuki/"
+           target="_blank" rel="noopener noreferrer">
+          Official Profile
+        </a>
+      </p>
     </section>
   </footer>
+
+  <!-- JS để bật/tắt menu + dark mode -->
+  <script src="test.js"></script>
 </body>
 </html>
-
