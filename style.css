@@ -67,6 +67,7 @@ body {
   transition: transform 0.3s ease;
   text-decoration: none;
   font-weight: 600;
+  z-index: 1;
 }
 
 .skip-link:focus,
